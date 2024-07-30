@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./Fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("./Fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("./Fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Monument-Regular";
+  src: url("./Fonts/MonumentExtended-Regular.otf");
+}
+
+/* Set full height and width for HTML and body */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Gilroy";
+}
+
+main {
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  padding: 0.1px;
+}
+/* 
+nav {
+  height: 15vh;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+  & h1 {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Monument-Bold";
+    font-size: 2.5vw;
+    letter-spacing: -2px;
+  }
+
+  & h3 {
+    font-family: "Gilroy-Light";
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+
+    &:nth-last-child(1) {
+      width: 10%;
+      border-right: 0;
+    }
+  }
+} */
+
+/* My aproach */
+nav {
+  height: 15vh;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 0 8vw;
+
+  & h1 {
+    font-family: "Monument-Regular";
+    font-size: 2.5vw;
+    letter-spacing: -2px;
+  }
+
+  & .second {
+    display: flex;
+    height: 100%;
+
+    & .box {
+      display: flex;
+    }
+
+    & h3 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-right: 2px solid black;
+      font-family: "Gilroy-Light";
+      padding: 0 50px;
+    }
+
+    & .lastH3 {
+      border-right: 0px;
+    }
+  }
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  padding: 4vw 7.8vw;
+
+  .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 237, 164);
+
+    & video {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      object-fit: cover;
+    }
+
+    & .overlay {
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 4vw 5vw;
+      font-family: "Monument-Regular";
+      color: #f8f8f8;
+      margin-bottom: 2vw;
+      
+      & h1 {
+        font-size: 3vw;
+      }
+
+      & h2 {
+        font-size: 1vw;
+        padding: 2.5vw 2.2vw;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+
+      & .over1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+      }
+
+      & .over2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid white;
+        color: white;
+        padding: 2vw 0vw;
+        
+        & h1 {
+          font-size: 1.2vw;
+        }
+        & h3 {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}
